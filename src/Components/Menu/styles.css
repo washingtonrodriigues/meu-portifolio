@@ -1,0 +1,39 @@
+@import '../../global.css';
+
+.navbar{
+    font-family: 'REM', sans-serif;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 3px 15px var(--color-shadow);
+    padding: 0 50px;
+}
+
+.logo{
+    width: 100px;
+    height: 60px;
+}
+
+.nav-list{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    font-weight: bold;
+}
+
+.nav-list a{
+    text-decoration: none;
+    color: var(--color-white);
+    transition: .3s;
+
+}
+
+.nav-list a:hover{
+    color: var(--color-purple);
+}
+
+.a-selected{
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--color-purple);
+}

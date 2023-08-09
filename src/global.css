@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=REM:wght@300;400;700&display=swap');
+
+
+:root{
+    --font-REM: 'REM';
+    --color-black: #18181B;
+    --color-white: #fff;
+    --color-shadow: #0000008f;
+    --color-purple: #A855F7
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--color-black);
+    width: 100vw;
+    height: 100vh;
+}
