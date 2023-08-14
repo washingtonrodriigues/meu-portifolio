@@ -1,7 +1,26 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import style from './styles.css';
 
 export default function Menu() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <nav className="navbar">
       <img
@@ -9,7 +28,13 @@ export default function Menu() {
         src="../.././public/logo-wr2.png"
         alt="Logo Washington Rodrigues"
       />
-      <ul className="nav-list">
+      <ul
+        style={{
+          opacity: windowWidth <= 768 && !isMenuOpen ? '0' : '1',
+        }}
+        className="nav-list"
+      >
+        {console.log(isMenuOpen)}
         <li>
           <a className="a-selected" href="#">
             Home
@@ -28,6 +53,7 @@ export default function Menu() {
           <a href="#">Contato</a>
         </li>
       </ul>
+      <i onClick={toggleMenu} className="fa-solid fa-bars"></i>
     </nav>
   );
 }
