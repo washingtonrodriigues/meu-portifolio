@@ -1,0 +1,70 @@
+@import '../../global.css';
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 10%;
+    color: var(--color-white);
+    font-family: var(--font-Roboto);
+}
+
+.first-content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.welcome-title{
+    color: var(--color-gray);
+    font-size: 2rem;
+}
+
+.name-title{
+    font-size: 3.5rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.title-title{
+    color: var(--color-purple);
+    font-size: 1.6rem;
+}
+
+.contact-links{
+    list-style: none;
+    font-size: 1.1rem;
+}
+
+.contact-links a{
+    color: var(--color-white);
+    text-decoration: none;
+    line-height: 35px;
+    transition: .2s;
+}
+
+.contact-links i{
+    margin-right: 10px;
+
+}
+
+.contact-links a:hover, .contact-links i:hover{
+    color: var(--color-purple);
+}
+
+.second-content{
+    width: 400px;   
+    height: 400px;
+}
+
+.photo{
+    width: 100%;
+    border: 5px solid var(--color-purple2);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.photo:hover{
+    border: 5px solid var(--color-purple);
+}

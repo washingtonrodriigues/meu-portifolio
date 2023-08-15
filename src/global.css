@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=REM:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 
 :root{
     --font-REM: 'REM';
+    --font-Roboto: 'Roboto';
     --color-black: #18181B;
     --color-white: #fff;
     --color-shadow: #0000008f;
-    --color-purple: #A855F7
+    --color-purple: #A855F7;
+    --color-purple2: #7222bd;
+    --color-gray: rgb(87, 87, 87);
 }
 
 *{
