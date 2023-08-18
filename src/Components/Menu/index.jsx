@@ -41,13 +41,13 @@ export default function Menu() {
           </a>
         </li>
         <li>
-          <a href="#">Sobre</a>
+          <a href="#">Projetos</a>
         </li>
         <li>
           <a href="#">Experiências</a>
         </li>
         <li>
-          <a href="#">Projetos</a>
+          <a href="#">Sobre</a>
         </li>
         <li>
           <a href="#">Contato</a>
