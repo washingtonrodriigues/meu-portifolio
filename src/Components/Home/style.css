@@ -57,7 +57,7 @@ header{
 .download-cv{
     border: 2px solid var(--color-purple);
     background-color: transparent;
-    color: #fff;
+    color: var(--color-purple);
     font-family: var(--font-Poppins);
     font-size: 1rem;
     width: 200px;
@@ -74,6 +74,7 @@ header{
 .download-cv:hover{
     border: 2px solid var(--color-purple2);
     background-color: var(--color-purple2);
+    color: #fff;
 }
 
 .next-page{

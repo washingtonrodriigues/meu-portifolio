@@ -3,6 +3,11 @@ import style from './style.css';
 import { motion } from 'framer-motion';
 
 export default function Home() {
+  function downloadFile() {
+    const googleDriveFileLink =
+      'https://drive.google.com/u/1/uc?id=1UPPez9b10BA-7bGNFjK_bHUpvx4Wrk3c&export=download';
+    window.open(googleDriveFileLink);
+  }
   return (
     <motion.header
       initial={{ opacity: 0 }}
@@ -34,7 +39,7 @@ export default function Home() {
             </a>
           </li>
         </ul>
-        <button className="download-cv">
+        <button onClick={downloadFile} className="download-cv">
           <i class="fa-solid fa-download"></i>Download CV
         </button>
         <NavLink className="next-page" to="/projects">
