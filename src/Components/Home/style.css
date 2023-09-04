@@ -35,6 +35,7 @@ header{
 .contact-links{
     list-style: none;
     font-size: 1.1rem;
+    font-family: var(--font-Poppins);
 }
 
 .contact-links a{
@@ -51,6 +52,43 @@ header{
 
 .contact-links a:hover, .contact-links i:hover{
     color: var(--color-purple);
+}
+
+.download-cv{
+    border: 2px solid var(--color-purple);
+    background-color: transparent;
+    color: #fff;
+    font-family: var(--font-Poppins);
+    font-size: 1rem;
+    width: 200px;
+    border-radius: 10px;
+    padding: 20px 30px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.download-cv i{
+    margin-right: 5px;
+}
+
+.download-cv:hover{
+    border: 2px solid var(--color-purple2);
+    background-color: var(--color-purple2);
+}
+
+.next-page{
+    text-decoration: none;
+    position: fixed;
+    bottom: 100px;
+    color: lightgray;
+    font-size: 13px;
+    font-family: var(--font-Poppins);
+    transition: .3s;
+}
+
+.next-page:hover{
+    color: var(--color-purple);
+    text-decoration: underline;
 }
 
 .second-content{

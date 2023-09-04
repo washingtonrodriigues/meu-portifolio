@@ -1,15 +1,15 @@
 import React from 'react';
 import Menu from './Components/Menu';
 import style from './global.css';
-import Home from './Components/Home';
-import Contact from './Components/Contact';
+
+import { BrowserRouter as Router } from 'react-router-dom';
+import AppRoutes from './routes/app.routes';
 
 export default function App() {
   return (
-    <>
+    <Router>
       <Menu />
-      <Home />
-      <Contact />
-    </>
+      <AppRoutes />
+    </Router>
   );
 }

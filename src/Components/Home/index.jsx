@@ -1,9 +1,15 @@
+import { NavLink } from 'react-router-dom';
 import style from './style.css';
+import { motion } from 'framer-motion';
 
 export default function Home() {
   return (
-    <header>
-      <div className="first-content">
+    <motion.header
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
+      <div className="first-content ">
         <div className="title">
           <h2 className="welcome-title">Seja bem-vindo(a)!</h2>
           <h1 className="name-title">Washington Rodrigues</h1>
@@ -28,6 +34,12 @@ export default function Home() {
             </a>
           </li>
         </ul>
+        <button className="download-cv">
+          <i class="fa-solid fa-download"></i>Download CV
+        </button>
+        <NavLink className="next-page" to="/projects">
+          Próxima página
+        </NavLink>
       </div>
       <div className="second-content">
         <img
@@ -36,6 +48,6 @@ export default function Home() {
           alt="Foto Washington Rodrigues"
         />
       </div>
-    </header>
+    </motion.header>
   );
 }

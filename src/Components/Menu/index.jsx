@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
 import style from './styles.css';
 
 export default function Menu() {
@@ -36,21 +37,29 @@ export default function Menu() {
       >
         {console.log(isMenuOpen)}
         <li>
-          <a className="a-selected" href="#">
+          <NavLink activeClassName="active" to="/">
             Home
-          </a>
+          </NavLink>
         </li>
         <li>
-          <a href="#">Projetos</a>
+          <NavLink activeClassName="active" to="/projects">
+            Projetos
+          </NavLink>
         </li>
         <li>
-          <a href="#">Experiências</a>
+          <NavLink activeClassName="active" to="/experiences">
+            Experiências
+          </NavLink>
         </li>
         <li>
-          <a href="#">Sobre</a>
+          <NavLink activeClassName="active" to="/about">
+            Sobre
+          </NavLink>
         </li>
         <li>
-          <a href="#">Contato</a>
+          <NavLink activeClassName="active" to="/contact">
+            Contato
+          </NavLink>
         </li>
       </ul>
       <i onClick={toggleMenu} className="fa-solid fa-bars"></i>
