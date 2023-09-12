@@ -1,0 +1,55 @@
+@import '../../global.css';
+
+.content-projects{
+    text-align: center;
+}
+
+#filterTypeProject{
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-family: var(--font-REM);
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 30px;
+}
+
+#filterTypeProject option{
+    background-color: var(--color-black);
+    font-size: 1rem;
+}
+
+.projects-uiux, .projects-frontend{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.project{
+    width: 40%;
+    cursor: pointer;
+    border: 2px solid var(--color-purple2);
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.project:hover{
+    border: 2px solid var(--color-purple);
+}
+
+.project img{
+    width: 100%;
+    border-radius: 10px;
+    padding: 5px 10px;
+    transition: .3s;
+
+}
+
+.project img:hover{
+    opacity: .5;
+}
+
+.previous-page{
+    position: fixed;
+    left: 10;
+}
