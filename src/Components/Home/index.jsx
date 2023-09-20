@@ -26,10 +26,11 @@ export default function Home() {
             Desenvolvedor Front-end e UI/UX Designer
           </h2>
           <p className="p-bio">
-            Utilizando o ReactJs como principal tecnologia, me dedico à criação
-            de aplicações web sofisticadas e altamente responsivas com foco na
-            experiência do usuário. Busco oferecer soluções que não apenas
-            atendam às necessidades, mas também encantem os usuários.
+            Utilizando o ReactJs como principal tecnologia juntamente com as
+            noções de UI/UX, me dedico à criação de aplicações web sofisticadas
+            e altamente responsivas, com foco na experiência do usuário. Busco
+            oferecer soluções que não apenas atendam às necessidades, mas também
+            encantem os usuários.
           </p>
         </div>
         <div className="technologies">
