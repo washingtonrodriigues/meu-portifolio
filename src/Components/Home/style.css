@@ -1,6 +1,6 @@
 @import '../../global.css';
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     padding-left: 80px;
@@ -11,15 +11,15 @@ header{
     font-family: var(--font-Roboto);
 }
 
-.first-content{
+.first-content {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
 
-.name-title{
-    font-size: 3.8rem;
+.name-title {
+    font-size: 4rem;
     margin-top: 10px;
     margin-bottom: 10px;
     width: 20ch;
@@ -31,17 +31,18 @@ header{
 
 @keyframes type {
     from {
-      width: 0;
+        width: 0;
     }
-    to{
+
+    to {
         opacity: 1;
     }
-    
-  }
 
-.title-title{
+}
+
+.title-title {
     color: var(--color-purple);
-    font-size: 1.8rem;
+    font-size: 2rem;
     animation: type 1s steps(40, end) 1s forwards;
     width: 20ch;
     white-space: nowrap;
@@ -49,32 +50,32 @@ header{
     opacity: 0;
 }
 
-.p-bio{
+.p-bio {
     width: 600px;
     text-align: justify;
     padding: 20px 0 0 0;
     line-height: 30px;
 }
 
-.technologies{
+.technologies {
     display: flex;
     gap: 20px;
 }
 
-.technologies > span{
+.technologies>span {
     cursor: pointer;
 }
 
-.tech-icons{
-    width:40px;
+.tech-icons {
+    width: 50px;
     transition: .3s;
 }
 
-.tech-icons:hover{
+.tech-icons:hover {
     transform: scale(1.2);
 }
 
-.tech-name{
+.tech-name {
     font-family: var(--font-Poppins);
     font-size: 14px;
     text-align: center;
@@ -84,11 +85,11 @@ header{
 
 }
 
-.tech-name:hover{
+.tech-name:hover {
     color: var(--color-purple);
 }
 
-.download-cv{
+.download-cv {
     border: none;
     background-image: linear-gradient(to right, var(--color-purple), var(--color-purple2));
     color: #fff;
@@ -98,30 +99,123 @@ header{
     border-radius: 10px;
     padding: 20px 30px;
     cursor: pointer;
-    background-size: 200% 100% ; 
+    background-size: 200% 100%;
 }
 
-.download-cv i{
+.download-cv i {
     margin-right: 5px;
 }
 
-.download-cv:hover{
+.download-cv:hover {
     background-image: linear-gradient(to right, var(--color-purple), #551591);
     background-position: 100% 0;
 }
 
-.second-content{
-    width: 350px;   
-    height: 350px;
+.second-content {
+    width: 400px;
+    height: 400px;
 }
 
-.photo{
+.photo {
     width: 100%;
     border: 5px solid var(--color-purple2);
     transition: .3s;
     cursor: pointer;
 }
 
-.photo:hover{
+.photo:hover {
     border: 5px solid var(--color-purple);
+}
+
+a.next-page {
+    bottom: 50px;
+}
+
+/* MEDIA QUERY */
+
+@media(max-width: 1024px) {
+    header {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .name-title {
+        font-size: 3rem;
+    }
+
+    .title-title {
+        font-size: 1.5rem;
+    }
+
+    .p-bio {
+        width: 500px;
+    }
+
+    .tech-name {
+        font-size: 12px;
+    }
+
+    .second-content {
+        width: 300px;
+        height: 300px;
+        display: flex;
+        align-items: center;
+    }
+
+    a.next-page {
+        bottom: 30px;
+    }
+}
+
+@media(max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+
+    .name-title {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .title-title {
+        margin: 0 auto;
+    }
+
+    .p-bio {
+        text-align: center;
+        margin: 0 auto;
+        width: 600px;
+    }
+
+    .technologies {
+        justify-content: center;
+    }
+
+    .technologies>span {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tech-icons {
+        width: 40px;
+    }
+
+    .second-content {
+        width: 300px;
+        height: 300px;
+    }
+
+    .download-cv {
+        margin: 0 auto 30px auto;
+    }
+
+    a.next-page {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        right: 0;
+    }
 }
