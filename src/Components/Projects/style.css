@@ -1,55 +1,107 @@
 @import '../../global.css';
 
-.content-projects{
-    text-align: center;
+.content-projects {
+  text-align: center;
 }
 
-#filterTypeProject{
-    border: none;
-    background-color: transparent;
-    color: #fff;
-    font-family: var(--font-REM);
-    font-size: 1.5rem;
-    text-align: center;
-    margin: 30px;
+#filterTypeProject {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-family: var(--font-REM);
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 30px;
 }
 
-#filterTypeProject option{
-    background-color: var(--color-black);
-    font-size: 1rem;
+#filterTypeProject option {
+  background-color: var(--color-black);
+  font-size: 1rem;
 }
 
-.projects-uiux, .projects-frontend{
-    display: flex;
-    justify-content: center;
-    gap: 50px;
+.projects-slide {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  max-width: 1040px;
 }
 
-.project{
-    width: 40%;
-    cursor: pointer;
-    border: 2px solid var(--color-purple2);
-    border-radius: 10px;
-    transition: .3s;
+.inner {
+  display: flex;
+  gap: 30px;
 }
 
-.project:hover{
-    border: 2px solid var(--color-purple);
+.project {
+  width: 100%;
+  display: flex;
+  margin: 30px auto;
+  gap: 20px;
+  border: 2px solid var(--color-purple);
+  border-radius: 10px;
 }
 
-.project img{
-    width: 100%;
-    border-radius: 10px;
-    padding: 5px 10px;
-    transition: .3s;
-
+.project > img {
+  width: 500px;
+  height: 95%;
+  margin: auto auto auto 7px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 2px solid var(--color-purple);
 }
 
-.project img:hover{
-    opacity: .5;
+.project-text {
+  width: 500px;
+  line-height: 25px;
+  padding-top: 30px;
+  padding-right: 30px;
 }
 
-.previous-page{
-    position: fixed;
-    left: 10;
+.project-text::before {
+  background-color: var(--color-purple);
+  width: 2px;
+  height: 10px;
+}
+
+.project-text > h3 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: left;
+  line-height: 40px;
+}
+
+.project-text > p {
+  text-align: justify;
+}
+
+.description {
+  margin-bottom: 20px;
+}
+
+.p-project {
+  font-family: var(--font-Poppins);
+  font-weight: 300;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.p-project > a {
+  text-decoration: none;
+  color: var(--color-purple);
+}
+
+.next-previous {
+  position: absolute;
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.fa-solid {
+  cursor: pointer;
+}
+
+.previous-page {
+  position: fixed;
+  left: 10;
 }

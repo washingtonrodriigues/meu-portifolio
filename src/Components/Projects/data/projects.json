@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Protótipo Site Cartoon Geek",
+    "type": "UI/UX Design",
+    "description": "Desenvolvi no Figma um protótipo incrível para o site da Cartoon Geek, uma loja online dedicada aos amantes da cultura geek e dos desenhos animados. Este projeto foi criado com paixão e precisão, visando proporcionar uma experiência única de compra para os fãs de desenhos animados, filmes, séries e jogos.",
+    "image": "../../.././public/projects-img/cartoonsite.png",
+    "technologies": ["Figma", "Adobe Photoshop"],
+    "link": "https://www.figma.com/proto/cH7sNUWtviqvpXuJJwEstR/Site-Cartoon?page-id=0%3A1&type=design&node-id=1-2&viewport=398%2C100%2C0.15&t=GocBNcosk2arKBX1-1&scaling=scale-down-width&mode=design",
+    "repository": ""
+  },
+  {
+    "title": "Protótipo Sistema de Loja Cartoon Geek",
+    "type": "UI/UX Design",
+    "description": "Este projeto é a materialização de um sistema de loja completo, concebido e detalhadamente projetado no Figma. O sistema representa uma solução abrangente para empresas e empreendedores que desejam ter total controle sobre tudo da sua organização, como vendas, relatórios, estoque de produtos e muito mais.",
+    "image": "../../.././public/projects-img/storesystem.png",
+    "technologies": ["Figma", "Adobe Photoshop"],
+    "link": "https://www.figma.com/proto/6IZ1QTvexRbhI9UCwzWd8V/sistema-loja?page-id=0%3A1&node-id=1-2&scaling=scale-down-width&mode=design&t=evnpLRM10ltagLoK-1",
+    "repository": ""
+  }
+]
