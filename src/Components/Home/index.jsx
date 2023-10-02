@@ -18,14 +18,15 @@ export default function Home() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
+      className='home'
     >
-      <div className="first-content ">
+      <div className="first-content-home">
         <div className="title">
           <h1 className="name-title">Washington Rodrigues</h1>
           <h2 className="title-title">
             Desenvolvedor Front-end e UI/UX Designer
           </h2>
-          <p className="p-bio">
+          <p className="p-bio" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
             Utilizando o ReactJs como principal tecnologia juntamente com as
             noções de UI/UX, me dedico à criação de aplicações web sofisticadas
             e altamente responsivas, com foco na experiência do usuário. Busco
@@ -60,8 +61,8 @@ export default function Home() {
           </span>
           <span
             data-aos="fade-up"
-            data-aos-delay="240"
-            data-aos-duration="1200"
+            data-aos-delay="200"
+            data-aos-duration="1000"
           >
             <img
               className="tech-icons"
@@ -72,8 +73,8 @@ export default function Home() {
           </span>
           <span
             data-aos="fade-up"
-            data-aos-delay="260"
-            data-aos-duration="1300"
+            data-aos-delay="220"
+            data-aos-duration="1100"
           >
             <img
               className="tech-icons"
@@ -84,8 +85,8 @@ export default function Home() {
           </span>
           <span
             data-aos="fade-up"
-            data-aos-delay="280"
-            data-aos-duration="1400"
+            data-aos-delay="200"
+            data-aos-duration="1000"
           >
             <img
               className="tech-icons"
@@ -96,8 +97,8 @@ export default function Home() {
           </span>
           <span
             data-aos="fade-up"
-            data-aos-delay="300"
-            data-aos-duration="1500"
+            data-aos-delay="220"
+            data-aos-duration="1100"
           >
             <img
               className="tech-icons"
@@ -108,8 +109,8 @@ export default function Home() {
           </span>
           <span
             data-aos="fade-up"
-            data-aos-delay="320"
-            data-aos-duration="1600"
+            data-aos-delay="200"
+            data-aos-duration="1000"
           >
             <img
               className="tech-icons"
@@ -133,7 +134,7 @@ export default function Home() {
         <NextPage to={'/projects'} />
       </div>
       <div
-        className="second-content"
+        className="second-content-home"
         data-aos="fade-down"
         data-aos-duration="2000"
       >

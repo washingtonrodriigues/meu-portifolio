@@ -30,9 +30,9 @@ export default function Projects({ project }) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="container"
+      className="container-projects"
     >
-      <h2>Projetos</h2>
+      <h2 data-aos="fade-right" data-aos-duration="1000">Projetos</h2>
 
       <div className='next-previous'>
         <i class="fa-solid fa-angle-left" onClick={() => handleArrowClick('left')}></i>
@@ -40,7 +40,7 @@ export default function Projects({ project }) {
       </div>
 
       <div className="content-projects">
-        <div className='select-project-type'>
+        <div className='select-project-type' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
           <h3 >Selecione o tipo de projeto:</h3>
           <select
             name=""
@@ -52,7 +52,7 @@ export default function Projects({ project }) {
             <option value="frontend">Front-end</option>
           </select>
         </div>
-        <div ref={carousel} className='projects-slide carousel'>
+        <div ref={carousel} className='projects-slide carousel' data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
           {filterType === 'uiux' ? (
             <motion.div
               initial={{ opacity: 0 }}
@@ -122,7 +122,7 @@ export default function Projects({ project }) {
       </div>
 
       <PreviousPage className="prev-page" to={'/'} />
-      <NextPage to={'/experiences'} />
+      <NextPage className="next-page" to={'/experiences'} />
     </motion.div>
   );
 }

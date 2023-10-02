@@ -1,149 +1,165 @@
-@import "../../global.css";
+@import '../../global.css';
 
-.container{
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    font-family: var(--font-REM);
+.container-contact {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  font-family: var(--font-REM);
 }
 
-.container > h2{
-    font-size: 2rem;
+.container-contact > h2 {
+  font-size: 2rem;
 }
 
-.content{
-    display: flex;
-    gap: 100px;
-    margin-top: 50px;
-    line-height: 30px;
+.first-content-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
-.content h3{
-    font-size: 1.4rem;
-    text-align: center;
+.content-contact {
+  display: flex;
+  gap: 100px;
+  margin-top: 50px;
+  line-height: 30px;
 }
 
-.social-medias, .email, .phone{
-    background-color: rgb(37, 37, 37);
-    border-radius: 10px;
-    padding: 20px 50px;
-    min-height: 150px;
+.content-contact h3 {
+  font-size: 1.4rem;
+  text-align: center;
+  color: var(--color-white);
 }
 
-.social-medias-icons{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-    font-size: 1.8rem;
+.social-medias,
+.email,
+.phone {
+  background-color: rgb(37, 37, 37);
+  border-radius: 10px;
+  padding: 20px 50px;
+  min-height: 150px;
 }
 
-.social-medias-icons a{
-    color: #fff;
+.social-medias-icons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  font-size: 1.8rem;
+}
 
+.social-medias-icons a {
+  color: #fff;
 }
 
 .social-medias-icons i {
-    border: 2px solid var(--color-purple2);
-    border-radius: 8px;
-    padding: 10px;
-    cursor: pointer;
-    transition: .2s;
+  border: 2px solid var(--color-purple2);
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.2s;
 }
 
-.social-medias-icons i:hover{
-    background-color: var(--color-purple2);
-    transform: scale(1.1);
+.social-medias-icons i:hover {
+  background-color: var(--color-purple2);
+  transform: scale(1.1);
 }
 
-.email, .phone{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+.email,
+.phone {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.email div, .phone div{
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    transition: .3s;
-    cursor: pointer;
-    font-size: 1.2rem;
+.email div,
+.phone div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  transition: 0.3s;
+  cursor: pointer;
+  font-size: 1.2rem;
 }
 
-.email div:hover, .phone div:hover{
-    color: var(--color-purple);
+.email div:hover,
+.phone div:hover {
+  color: var(--color-purple);
 }
 
-.email div a, .phone div a{
-    text-decoration: none;
-    color: #fff;
-    transition: .3s;
+.email div a,
+.phone div a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
 }
 
-.email div a:hover, .phone div a:hover{
-    color: var(--color-purple);
+.email div a:hover,
+.phone div a:hover {
+  color: var(--color-purple);
 }
 
 /* ESTILIZAÇÃO DO FORMULÁRIO */
 
-.second-content{
-    font-family: var(--font-Poppins);
+.second-content-contact {
+  font-family: var(--font-Poppins);
 }
 
-.input{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
+.input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  width: 350px;
 }
 
-.input label{
-    margin-bottom: 10px;
+.input label {
+  margin-bottom: 10px;
 }
 
-.input input{
-    background-color: rgb(37, 37, 37);
-    border: none;
-    border-radius: 8px;
-    padding: 20px 30px;
-    color: #fff;
+.input input {
+  background-color: rgb(37, 37, 37);
+  border: none;
+  border-radius: 8px;
+  padding: 20px 30px;
+  color: #fff;
 }
 
-.input input::placeholder, #message::placeholder{
-    font-family: var(--font-Poppins);
+.input input::placeholder,
+#message::placeholder {
+  font-family: var(--font-Poppins);
 }
 
-.input input:focus, #message:focus{
-    outline: 2px solid var(--color-purple);
-    background-color: var(--color-shadow);
-    color: #fff;
+.input input:focus,
+#message:focus {
+  outline: 2px solid var(--color-purple);
+  background-color: var(--color-shadow);
+  color: #fff;
 }
 
-#message{
-    border-radius: 5px;
-    background-color: rgb(37, 37, 37);
-    border: none;
-    height: 100px;
-    padding: 5px 10px;
+#message {
+  border-radius: 5px;
+  background-color: rgb(37, 37, 37);
+  border: none;
+  height: 100px;
+  padding: 5px 10px;
 }
 
-.send-btn{
-    border: none;
-    background-color: var(--color-purple2);
-    color: #fff;
-    font-family: var(--font-Poppins);
-    font-size: 14px;
-    width: 150px;
-    border-radius: 8px;
-    padding: 10px 30px;
-    cursor: pointer;
-    transition: .3s;
-    letter-spacing: 2px;
+.send-btn {
+  border: none;
+  background-color: var(--color-purple2);
+  color: #fff;
+  font-family: var(--font-Poppins);
+  font-size: 14px;
+  width: 150px;
+  border-radius: 8px;
+  padding: 10px 30px;
+  cursor: pointer;
+  transition: 0.3s;
+  letter-spacing: 2px;
 }
 
-.send-btn:hover{
-    background-color: #59139b;
+.send-btn:hover {
+  background-color: #59139b;
 }

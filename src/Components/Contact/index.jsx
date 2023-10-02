@@ -67,11 +67,11 @@ export default function Contact() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="container"
+      className="container-contact"
     >
       <h2>Contato</h2>
-      <div className="content">
-        <div className="first-content">
+      <div className="content-contact">
+        <div className="first-content-contact">
           <div className="social-medias">
             <h3>Redes Sociais</h3>
             <div className="social-medias-icons">
@@ -117,7 +117,7 @@ export default function Contact() {
             </div>
           </div>
         </div>
-        <form className="second-content" onSubmit={sendEmail}>
+        <form className="second-content-contact" onSubmit={sendEmail}>
           <div className="input">
             <label htmlFor="">Nome</label>
             <input

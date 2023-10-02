@@ -24,11 +24,13 @@ export default function Menu() {
 
   return (
     <nav className="navbar">
-      <img
-        className="logo"
-        src="../.././public/logo-wr2.png"
-        alt="Logo Washington Rodrigues"
-      />
+      <a href="/" className='a-logo'>
+        <img
+          className="logo"
+          src="../.././public/logo-wr2.png"
+          alt="Logo Washington Rodrigues"
+        />
+      </a>
       <ul
         style={{
           opacity: windowWidth <= 768 && !isMenuOpen ? '0' : '1',

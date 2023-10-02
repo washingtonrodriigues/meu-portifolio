@@ -1,6 +1,6 @@
 @import '../../global.css';
 
-header {
+.home {
   display: flex;
   justify-content: space-between;
   padding-left: 80px;
@@ -11,7 +11,7 @@ header {
   font-family: var(--font-Roboto);
 }
 
-.first-content {
+.first-content-home {
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -24,7 +24,7 @@ header {
   width: 20ch;
   white-space: nowrap;
   overflow: hidden;
-  animation: type 2s steps(40, end) forwards;
+  animation: type 2s steps(44, end) forwards;
   opacity: 0;
 }
 
@@ -112,7 +112,7 @@ header {
   background-position: 100% 0;
 }
 
-.second-content {
+.second-content-home {
   width: 350px;
   height: 350px;
 }
@@ -176,7 +176,7 @@ a.next-page {
   }
 
   .name-title {
-    margin: 0 auto;
+    margin: 50px auto 20px auto;
     text-align: center;
   }
 

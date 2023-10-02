@@ -1,5 +1,15 @@
 @import '../../global.css';
 
+.container-projects {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  font-family: var(--font-REM);
+}
+
 .content-projects {
   text-align: center;
 }
@@ -51,6 +61,11 @@
   border: 2px solid var(--color-purple);
   border-radius: 10px;
   background-color: #000;
+  transition: 0.3s;
+}
+
+.project:hover {
+  border: 2px solid var(--color-purple2);
 }
 
 .project > img {
@@ -114,6 +129,5 @@
 }
 
 .previous-page {
-  position: fixed;
-  left: 10;
+  bottom: 50px;
 }
