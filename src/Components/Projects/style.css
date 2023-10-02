@@ -4,14 +4,26 @@
   text-align: center;
 }
 
+.select-project-type {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0 20px 0;
+  gap: 20px;
+}
+
+.select-project-type h3 {
+  font-weight: normal;
+  font-family: var(--font-Poppins);
+  font-size: 1rem;
+}
+
 #filterTypeProject {
   border: none;
   background-color: transparent;
   color: #fff;
   font-family: var(--font-REM);
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-align: center;
-  margin: 30px;
 }
 
 #filterTypeProject option {
@@ -38,6 +50,7 @@
   gap: 20px;
   border: 2px solid var(--color-purple);
   border-radius: 10px;
+  background-color: #000;
 }
 
 .project > img {
@@ -46,7 +59,6 @@
   margin: auto auto auto 7px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  border: 2px solid var(--color-purple);
 }
 
 .project-text {

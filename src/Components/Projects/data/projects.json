@@ -16,5 +16,23 @@
     "technologies": ["Figma", "Adobe Photoshop"],
     "link": "https://www.figma.com/proto/6IZ1QTvexRbhI9UCwzWd8V/sistema-loja?page-id=0%3A1&node-id=1-2&scaling=scale-down-width&mode=design&t=evnpLRM10ltagLoK-1",
     "repository": ""
+  },
+  {
+    "title": "Projeto PizzaGourmet",
+    "type": "Front-end",
+    "description": "O projeto de site para pizzaria começou a ser desenvolvido no início dos meus estudos de front-end, com HTML, CSS e JavaScript. Ele não está completo, pois o mesmo será refeito com ReactJS e com um código mais limpo, mas é um projeto agradável e visualmente bonito. Refazê-lo com todas as funcionalidades: pedidos online, reserva de mesa em data definida e etc será um grande desafio, mas também será uma experiência incrível.",
+    "image": "../../.././public/projects-img/pizzaproject.png",
+    "technologies": ["HTML5", "CSS3", "JavaScript"],
+    "link": "https://washingtonrodriigues.github.io/Projeto-Pizzaria/",
+    "repository": "https://github.com/washingtonrodriigues/Projeto-Pizzaria"
+  },
+  {
+    "title": "Projeto Rio - Redgtech",
+    "type": "Front-end",
+    "description": "Esse projeto consiste em um sistema que gerencia todo o funcionamento das placas de automação fornecidas pela empresa Redtech, onde sou voluntário. O Front-end do mesmo está sendo construído com ReactJS e há várias integrações com o back-end para que os dados sejam manipulados na tela de forma dinâmica. O projeto ainda não está pronto, porém, no link abaixo você poderá ver imagens de algumas telas que já construí.",
+    "image": "../../.././public/projects-img/redgtechproject.png",
+    "technologies": ["ReactJS", "CSS3", "JavaScript", "Bootstrap"],
+    "link": "https://drive.google.com/drive/folders/1Wwi5d_kxZ2gI18_WeO8N9MWQyXnw5yBa?usp=sharing",
+    "repository": "https://github.com/seven-lan/front-end"
   }
 ]
