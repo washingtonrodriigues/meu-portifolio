@@ -1,9 +1,10 @@
 import { NavLink } from 'react-router-dom';
-import style from './style.css';
+import styles from './styles.module.css';
+import classNames from 'classnames';
 
 export default function NextPage({ to }) {
   return (
-    <NavLink className="next-page" to={to}>
+    <NavLink className={classNames(styles.next_page)} to={to}>
       Próxima página
     </NavLink>
   );

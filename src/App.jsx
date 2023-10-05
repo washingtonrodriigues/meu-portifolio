@@ -1,9 +1,11 @@
 import React from 'react';
 import Menu from './Components/Menu';
-import style from './global.css';
+import styles from './global.css';
 import { BrowserRouter as Router } from 'react-router-dom';
 import AppRoutes from './routes/app.routes';
 import { ToastContainer, toast } from 'react-toastify';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 import 'react-toastify/dist/ReactToastify.css';
 

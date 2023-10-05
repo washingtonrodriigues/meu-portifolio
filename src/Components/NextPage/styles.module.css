@@ -1,0 +1,18 @@
+@import '../../global.css';
+
+.next_page {
+  text-decoration: none;
+  position: fixed;
+  bottom: 100px;
+  color: lightgray;
+  font-size: 13px;
+  font-family: var(--font-Poppins);
+  transition: 0.3s;
+  right: 50px;
+  background-color: var(--color-black);
+}
+
+.next_page:hover {
+  color: var(--color-purple);
+  text-decoration: underline;
+}

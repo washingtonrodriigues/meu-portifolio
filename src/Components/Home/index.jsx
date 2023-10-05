@@ -1,7 +1,8 @@
-import style from './style.css';
+import styles from './styles.module.css';
 import { motion, useScroll } from 'framer-motion';
 import NextPage from '../NextPage';
 import { useState } from 'react';
+import classNames from 'classnames';
 
 export default function Home() {
   const [hovered, setHovered] = useState(false);
@@ -18,15 +19,15 @@ export default function Home() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className='home'
+      className={classNames(styles.home)}
     >
-      <div className="first-content-home">
-        <div className="title">
-          <h1 className="name-title">Washington Rodrigues</h1>
-          <h2 className="title-title">
+      <div className={classNames(styles.first_content_home)}>
+        <div className={classNames(styles.title)}>
+          <h1 className={classNames(styles.name_title)}>Washington Rodrigues</h1>
+          <h2 className={classNames(styles.title_title)}>
             Desenvolvedor Front-end e UI/UX Designer
           </h2>
-          <p className="p-bio" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
+          <p className={classNames(styles.p_bio)} data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
             Utilizando o ReactJs como principal tecnologia juntamente com as
             noções de UI/UX, me dedico à criação de aplicações web sofisticadas
             e altamente responsivas, com foco na experiência do usuário. Busco
@@ -34,18 +35,18 @@ export default function Home() {
             encantem os usuários.
           </p>
         </div>
-        <div className="technologies">
+        <div className={classNames(styles.technologies)}>
           <span
             data-aos="fade-up"
             data-aos-delay="200"
             data-aos-duration="1000"
           >
             <img
-              className="tech-icons"
+              className={classNames(styles.tech_icons)}
               src="../.././public/icons/react.svg"
               alt=""
             />
-            <p className="tech-name">ReactJS</p>
+            <p className={classNames(styles.tech_name)}>ReactJS</p>
           </span>
           <span
             data-aos="fade-up"
@@ -53,11 +54,11 @@ export default function Home() {
             data-aos-duration="1100"
           >
             <img
-              className="tech-icons"
+              className={classNames(styles.tech_icons)}
               src="../.././public/icons/javascript.svg"
               alt=""
             />
-            <p className="tech-name">JavaScript</p>
+            <p className={classNames(styles.tech_name)}>JavaScript</p>
           </span>
           <span
             data-aos="fade-up"
@@ -65,11 +66,11 @@ export default function Home() {
             data-aos-duration="1000"
           >
             <img
-              className="tech-icons"
+              className={classNames(styles.tech_icons)}
               src="../.././public/icons/typescript.svg"
               alt=""
             />
-            <p className="tech-name">TypeScript</p>
+            <p className={classNames(styles.tech_name)}>TypeScript</p>
           </span>
           <span
             data-aos="fade-up"
@@ -77,11 +78,11 @@ export default function Home() {
             data-aos-duration="1100"
           >
             <img
-              className="tech-icons"
+              className={classNames(styles.tech_icons)}
               src="../.././public/icons/html.svg"
               alt=""
             />
-            <p className="tech-name">HTML5</p>
+            <p className={classNames(styles.tech_name)}>HTML5</p>
           </span>
           <span
             data-aos="fade-up"
@@ -89,11 +90,11 @@ export default function Home() {
             data-aos-duration="1000"
           >
             <img
-              className="tech-icons"
+              className={classNames(styles.tech_icons)}
               src="../.././public/icons/css.svg"
               alt=""
             />
-            <p className="tech-name">CSS3</p>
+            <p className={classNames(styles.tech_name)}>CSS3</p>
           </span>
           <span
             data-aos="fade-up"
@@ -101,11 +102,11 @@ export default function Home() {
             data-aos-duration="1100"
           >
             <img
-              className="tech-icons"
+              className={classNames(styles.tech_icons)}
               src="../.././public/icons/git.svg"
               alt=""
             />
-            <p className="tech-name">Git</p>
+            <p className={classNames(styles.tech_name)}>Git</p>
           </span>
           <span
             data-aos="fade-up"
@@ -113,11 +114,11 @@ export default function Home() {
             data-aos-duration="1000"
           >
             <img
-              className="tech-icons"
+              className={classNames(styles.tech_icons)}
               src="../.././public/icons/figma.svg"
               alt=""
             />
-            <p className="tech-name">Figma</p>
+            <p className={classNames(styles.tech_name)}>Figma</p>
           </span>
         </div>
         <button
@@ -125,22 +126,22 @@ export default function Home() {
           data-aos-delay="200"
           data-aos-duration="2000"
           onClick={downloadFile}
-          className="download-cv"
+          className={classNames(styles.download_cv)}
           onMouseEnter={() => setHovered(true)}
           style={styleBtn}
         >
-          <i class="fa-solid fa-download"></i>Download CV
+          <i style={{ backgroundColor: 'transparent' }} class="fa-solid fa-download" ></i>Download CV
         </button>
         <NextPage to={'/projects'} />
       </div>
       <div
-        className="second-content-home"
+        className={classNames(styles.second_content_home)}
         data-aos="fade-down"
         data-aos-duration="2000"
       >
         <a href="/about">
           <img
-            className="photo"
+            className={classNames(styles.photo)}
             src="../../public/profile2.jpg"
             alt="Foto Washington Rodrigues"
           />

@@ -1,0 +1,272 @@
+@import '../../global.css';
+
+.home {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 80px;
+  padding-right: 80px;
+  align-items: center;
+  margin-top: 10%;
+  color: var(--color-white);
+  font-family: var(--font-Poppins);
+  background-color: var(--color-black);
+}
+
+.first_content_home {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.name_title {
+  font-family: var(--font-Roboto);
+  font-size: 3.8rem;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 21ch;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: type 2s steps(44, end) forwards;
+  opacity: 0;
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.title_title {
+  color: var(--color-purple);
+  font-family: var(--font-Roboto);
+  font-size: 2rem;
+  animation: type 1s steps(40, end) 1s forwards;
+  width: 20ch;
+  white-space: nowrap;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.p_bio {
+  width: 600px;
+  text-align: justify;
+  padding: 20px 0 0 0;
+  line-height: 30px;
+}
+
+.technologies {
+  display: flex;
+  gap: 20px;
+}
+
+.technologies > span {
+  cursor: pointer;
+}
+
+.tech_icons {
+  width: 50px;
+  transition: 0.3s;
+}
+
+.tech_icons:hover {
+  transform: scale(1.2);
+}
+
+.tech_name {
+  font-family: var(--font-Poppins);
+  font-size: 14px;
+  text-align: center;
+  color: #cecece;
+  transition: 0.3s;
+  padding-top: 5px;
+}
+
+.tech_name:hover {
+  color: var(--color-purple);
+}
+
+.download_cv {
+  border: none;
+  background-image: linear-gradient(
+    to right,
+    var(--color-purple),
+    var(--color-purple2)
+  );
+  color: #fff;
+  font-family: var(--font-Poppins);
+  font-size: 1rem;
+  width: 200px;
+  border-radius: 10px;
+  padding: 20px 30px;
+  cursor: pointer;
+  background-size: 200% 100%;
+}
+
+.download_cv i {
+  margin-right: 5px;
+}
+
+.download_cv:hover {
+  background-image: linear-gradient(to right, var(--color-purple), #551591);
+  background-position: 100% 0;
+}
+
+.second_content_home {
+  width: 350px;
+  height: 350px;
+}
+
+.photo {
+  width: 100%;
+  border: 5px solid var(--color-purple2);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.photo:hover {
+  border: 5px solid var(--color-purple);
+}
+
+a.next_page {
+  bottom: 50px;
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 1024px) {
+  .home {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .name_title {
+    font-size: 3rem;
+  }
+
+  .title_title {
+    font-size: 1.5rem;
+  }
+
+  .p_bio {
+    width: 500px;
+  }
+
+  .tech_name {
+    font-size: 12px;
+  }
+
+  .second_content_home {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+  }
+
+  a.next_page {
+    bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+
+  .name_title {
+    margin: 50px auto 20px auto;
+    text-align: center;
+  }
+
+  .title_title {
+    margin: 0 auto;
+  }
+
+  .p_bio {
+    text-align: center;
+    margin: 0 auto;
+    width: 600px;
+  }
+
+  .technologies {
+    justify-content: center;
+  }
+
+  .technologies > span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tech_icons {
+    width: 40px;
+  }
+
+  .second_content {
+    width: 300px;
+    height: 300px;
+  }
+
+  .download_cv {
+    margin: 0 auto 30px auto;
+  }
+
+  a.next_page {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    right: 0;
+  }
+}
+
+@media (max-width: 620px) {
+  .home {
+    width: auto;
+  }
+  .name_title {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+  }
+
+  .title_title {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
+  .p_bio {
+    width: 350px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .technologies {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 380px) {
+  .second-content_home {
+    width: 280px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .name_title {
+    margin-top: -20px;
+  }
+
+  .p_bio {
+    width: 300px;
+  }
+
+  .technologies span {
+    width: 50px;
+  }
+}

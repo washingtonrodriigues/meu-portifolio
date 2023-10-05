@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import PreviousPage from '../PreviousPage';
-import styles from './styles.css';
+import styles from './styles.module.css';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 import { toast } from 'react-toastify';
+import classNames from 'classnames';
 
 export default function Contact() {
   const [name, setName] = useState('');
@@ -67,14 +68,14 @@ export default function Contact() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="container-contact"
+      className={classNames(styles.container_contact)}
     >
       <h2>Contato</h2>
-      <div className="content-contact">
-        <div className="first-content-contact">
-          <div className="social-medias">
+      <div className={classNames(styles.content_contact)}>
+        <div className={classNames(styles.first_content_contact)}>
+          <div className={classNames(styles.social_medias)}>
             <h3>Redes Sociais</h3>
-            <div className="social-medias-icons">
+            <div className={classNames(styles.social_medias_icons)}>
               <a
                 target="_blank"
                 href="https://www.linkedin.com/in/washington-rodrigues-575162255/"
@@ -98,7 +99,7 @@ export default function Contact() {
               </a>
             </div>
           </div>
-          <div className="email">
+          <div className={classNames(styles.email)}>
             <h3>E-mail</h3>
             <div>
               <i className="fa-regular fa-envelope"></i>
@@ -107,7 +108,7 @@ export default function Contact() {
               </a>
             </div>
           </div>
-          <div className="phone">
+          <div className={classNames(styles.phone)}>
             <h3>Telefone</h3>
             <div>
               <i className="fa-brands fa-whatsapp"></i>
@@ -117,8 +118,8 @@ export default function Contact() {
             </div>
           </div>
         </div>
-        <form className="second-content-contact" onSubmit={sendEmail}>
-          <div className="input">
+        <form className={classNames(styles.second_content_contact)} onSubmit={sendEmail}>
+          <div className={classNames(styles.input)}>
             <label htmlFor="">Nome</label>
             <input
               required
@@ -130,7 +131,7 @@ export default function Contact() {
               value={name}
             />
           </div>
-          <div className="input">
+          <div className={classNames(styles.input)}>
             <label htmlFor="">E-mail</label>
             <input
               required
@@ -142,7 +143,7 @@ export default function Contact() {
               value={email}
             />
           </div>
-          <div className="input">
+          <div className={classNames(styles.input)}>
             <label htmlFor="">Telefone</label>
             <input
               required
@@ -155,20 +156,20 @@ export default function Contact() {
               value={phone}
             />
           </div>
-          <div className="input">
+          <div className={classNames(styles.input)}>
             <label htmlFor="">Mensagem</label>
             <textarea
               required
               name="message"
-              id="message"
+              className={classNames(styles.message)}
               cols="30"
-              rows="10"
+              rows="3"
               placeholder="Mensagem"
               onChange={(e) => setMessage(e.target.value)}
               value={message}
             ></textarea>
           </div>
-          <input className="send-btn" type="submit" value="Enviar" />
+          <input className={classNames(styles.send_btn)} type="submit" value="Enviar" />
         </form>
       </div>
       <PreviousPage to={'/about'} />

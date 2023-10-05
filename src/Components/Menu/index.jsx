@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { NavLink } from 'react-router-dom';
-import style from './styles.css';
+import { NavLink, useLocation } from 'react-router-dom';
+import styles from './styles.module.css';
+import classNames from 'classnames';
 
 export default function Menu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const location = useLocation()
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -23,10 +25,10 @@ export default function Menu() {
   }, []);
 
   return (
-    <nav className="navbar">
-      <a href="/" className='a-logo'>
+    <nav className={classNames(styles.navbar)}>
+      <a href="/" className={classNames(styles.a_logo)}>
         <img
-          className="logo"
+          className={classNames(styles.logo)}
           src="../.././public/logo-wr2.png"
           alt="Logo Washington Rodrigues"
         />
@@ -35,36 +37,36 @@ export default function Menu() {
         style={{
           opacity: windowWidth <= 768 && !isMenuOpen ? '0' : '1',
         }}
-        className="nav-list"
+        className={classNames(styles.nav_list)}
       >
         {console.log(isMenuOpen)}
         <li>
-          <NavLink activeClassName="active" to="/">
+          <NavLink exact className={classNames([styles.link], location.pathname === '/' ? styles.active : '')} to="/">
             Home
           </NavLink>
         </li>
         <li>
-          <NavLink activeClassName="active" to="/projects">
+          <NavLink className={classNames([styles.link], location.pathname === '/projects' ? styles.active : '')} to="/projects">
             Projetos
           </NavLink>
         </li>
         <li>
-          <NavLink activeClassName="active" to="/experiences">
+          <NavLink className={classNames([styles.link], location.pathname === '/experiences' ? styles.active : '')} to="/experiences">
             Experiências
           </NavLink>
         </li>
         <li>
-          <NavLink activeClassName="active" to="/about">
+          <NavLink className={classNames([styles.link], location.pathname === '/about' ? styles.active : '')} to="/about">
             Sobre
           </NavLink>
         </li>
         <li>
-          <NavLink activeClassName="active" to="/contact">
+          <NavLink className={classNames([styles.link], location.pathname === '/contact' ? styles.active : '')} to="/contact">
             Contato
           </NavLink>
         </li>
       </ul>
-      <i onClick={toggleMenu} className="fa-solid fa-bars"></i>
+      <i onClick={toggleMenu} className={`fa-solid fa-bars ${classNames(styles.fa_bars)}`}></i>
     </nav>
   );
 }
