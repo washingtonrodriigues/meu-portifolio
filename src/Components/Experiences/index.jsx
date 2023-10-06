@@ -1,10 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Carousel } from 'react-bootstrap';
 import experiences from './data/exp.json'
 import styles from './styles.module.css'
 import classNames from 'classnames';
-import { Card } from 'react-bootstrap';
 
 export default function Experiences() {
   return (
@@ -14,26 +12,42 @@ export default function Experiences() {
       exit={{ opacity: 0 }}
       className={classNames(styles.container_exp)}
     >
-      <h2>Experiências</h2>
-      <Carousel className={classNames(styles.carousel_exp)}>
-        {experiences.map((experience, index) => (
-          <Card key={index} className={classNames(styles.carousel_item_exp)}>
-            <Card.Header as="h5">{experience.company}</Card.Header>
-            <Card.Body>
-              <Card.Title>{experience.office}</Card.Title>
-              <Card.Text>
-                {experience.description}
-              </Card.Text>
-              <Card.Text>
-                {experience.technologies}
-              </Card.Text>
-            </Card.Body>
-            <footer>
-              {experience.start}{experience.end}
-            </footer>
-          </Card>
-        ))}
-      </Carousel>
+      <div>
+        <h2 className={classNames(styles.h2_title)}>Experiências</h2>
+        <div className={classNames(styles.div_exp)}>
+          {experiences.map((experience, index) => (
+
+            <div className={classNames(styles.exp_card)}>
+              <p>{experience.start} - {experience.end}</p>
+              <div>
+                <div className={classNames(styles.exp_card_header)}>
+                  <h3>{experience.company}</h3>
+                  <p>{experience.office}</p>
+                </div>
+                <p className={classNames(styles.exp_card_description)}>{experience.description}</p>
+              </div>
+            </div>
+            // <div key={index} className={classNames(styles.card_exp)}>
+            //   <h3 className={classNames(styles.card_header)}>{experience.company}</h3>
+            //   <div>
+            //     <h4>{experience.office}</h4>
+            //     <p>
+            //       {experience.description}
+            //     </p>
+            //     <p>
+            //       {experience.technologies}
+            //     </p>
+            //   </div>
+            //   <footer>
+            //     {experience.start}{experience.end}
+            //   </footer>
+            // </div>
+          ))}
+        </div>
+      </div>
+      <div>
+        <h2 className={classNames(styles.h2_title)}>Competências</h2>
+      </div>
     </motion.div>
   );
 }

@@ -1,9 +1,26 @@
+@import '../../global.css';
+
 .container_exp {
-  color: #fff;
+  color: var(--color-white);
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50px;
+  justify-content: space-between;
+  margin: 50px;
   font-family: var(--font-REM);
+}
+
+/* .h2_title {
+  text-align: center;
+} */
+
+.exp_card {
+  width: 500px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.exp_card > p {
+  font-size: 15px;
+  color: gray;
 }
