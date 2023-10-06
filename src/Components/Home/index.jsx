@@ -25,7 +25,7 @@ export default function Home() {
         <div className={classNames(styles.title)}>
           <h1 className={classNames(styles.name_title)}>Washington Rodrigues</h1>
           <h2 className={classNames(styles.title_title)}>
-            Desenvolvedor Front-end e UI/UX Designer
+            Desenvolvedor Front-end
           </h2>
           <p className={classNames(styles.p_bio)} data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
             Utilizando o ReactJs como principal tecnologia juntamente com as

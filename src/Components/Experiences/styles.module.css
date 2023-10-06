@@ -1,0 +1,9 @@
+.container_exp {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  font-family: var(--font-REM);
+}

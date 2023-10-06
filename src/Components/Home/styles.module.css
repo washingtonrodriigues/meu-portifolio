@@ -43,7 +43,7 @@
 
 .title_title {
   color: var(--color-purple);
-  font-family: var(--font-Roboto);
+  font-family: var(--font-REM);
   font-size: 2rem;
   animation: type 1s steps(40, end) 1s forwards;
   width: 20ch;

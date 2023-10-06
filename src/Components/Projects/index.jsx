@@ -1,5 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import style from './styles.css';
 import PreviousPage from '../PreviousPage';
