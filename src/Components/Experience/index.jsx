@@ -4,6 +4,8 @@ import experiences from './data/exp.json'
 import styles from './styles.module.css'
 import classNames from 'classnames';
 import Skills from './Skills';
+import PreviousPage from '../PreviousPage';
+import NextPage from '../NextPage';
 
 export default function Experience() {
   const [hoveredCards, setHoveredCards] = useState(Array(experiences.length).fill(false));
@@ -51,6 +53,8 @@ export default function Experience() {
         <h2 className={classNames(styles.h2_skills)}>Competências</h2>
         <Skills />
       </div>
+      <PreviousPage to={"/projects"} />
+      <NextPage to={"/about"} />
     </motion.div>
   );
 }

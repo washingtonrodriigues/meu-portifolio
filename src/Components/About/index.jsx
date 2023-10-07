@@ -24,7 +24,7 @@ export default function About() {
         </div>
         <img src="../../public/couple.jpg" alt="" className={classNames(styles.img_about)} />
       </div>
-      <PreviousPage to={'/experiences'} />
+      <PreviousPage to={'/experience'} />
       <NextPage to={'/contact'} />
     </motion.div>
   );

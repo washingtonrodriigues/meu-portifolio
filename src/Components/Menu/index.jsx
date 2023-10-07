@@ -51,7 +51,7 @@ export default function Menu() {
           </NavLink>
         </li>
         <li>
-          <NavLink className={classNames([styles.link], location.pathname === '/experiences' ? styles.active : '')} to="/experience">
+          <NavLink className={classNames([styles.link], location.pathname === '/experience' ? styles.active : '')} to="/experience">
             Experiência
           </NavLink>
         </li>

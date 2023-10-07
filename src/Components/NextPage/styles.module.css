@@ -3,7 +3,7 @@
 .next_page {
   text-decoration: none;
   position: fixed;
-  bottom: 100px;
+  bottom: 50px;
   color: lightgray;
   font-size: 13px;
   font-family: var(--font-Poppins);
