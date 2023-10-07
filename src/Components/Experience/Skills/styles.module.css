@@ -1,0 +1,37 @@
+@import '../../../global.css';
+
+.skills_table {
+  margin-top: 50px;
+}
+
+.skills_p {
+  color: var(--color-white);
+  font-family: var(--font-Poppins);
+}
+
+.skills_td {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.skills_td > div {
+  display: flex;
+}
+
+.skills_technologie {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills_span {
+  display: inline-block;
+  width: 4px;
+  height: 40px;
+  margin-right: 10px;
+  background: var(--color-purple2);
+}
+
+.skills_level {
+  font-size: 12px;
+  color: gray;
+}

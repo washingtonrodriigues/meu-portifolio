@@ -1,0 +1,34 @@
+[
+  {
+    "skill": "React",
+    "level": "Intermediário"
+  },
+  {
+    "skill": "Javascript",
+    "level": "Intermediário"
+  },
+  {
+    "skill": "Typescript",
+    "level": "Iniciante"
+  },
+  {
+    "skill": "Bootstrap",
+    "level": "Intermediário"
+  },
+  {
+    "skill": "HTML5",
+    "level": "Avançado"
+  },
+  {
+    "skill": "CSS3",
+    "level": "Avançado"
+  },
+  {
+    "skill": "Git",
+    "level": "Intermediário"
+  },
+  {
+    "skill": "Figma",
+    "level": "Intermediário"
+  }
+]

@@ -99,7 +99,7 @@ export default function Projects({ project }) {
         </div>
       </div>
       <PreviousPage className="prev-page" to={'/'} />
-      <NextPage className="next-page" to={'/experiences'} />
+      <NextPage className="next-page" to={'/experience'} />
     </motion.div>
   );
 }

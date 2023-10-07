@@ -1,0 +1,62 @@
+@import '../../global.css';
+
+.container_exp {
+  color: var(--color-white);
+  display: flex;
+  justify-content: space-between;
+  margin: 50px;
+  font-family: var(--font-REM);
+}
+
+.container_exp h2 {
+  text-align: center;
+}
+
+.exp_card {
+  width: 600px;
+  margin-top: 50px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  justify-content: space-between;
+  gap: 30px;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.exp_card:hover {
+  background-color: var(--color-shadow);
+}
+
+.exp_card p,
+h3,
+div {
+  background-color: transparent;
+}
+
+.exp_card > p {
+  font-size: 15px;
+  color: gray;
+}
+
+.exp_card_header > p {
+  color: gray;
+}
+
+.exp_card_header > h3 > i {
+  background-color: transparent;
+  font-size: 12px;
+  margin-left: 10px;
+  transition: 0.3s;
+}
+
+.exp_card_description {
+  text-align: justify;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.div_skills {
+  position: fixed;
+  right: 50px;
+}
