@@ -132,7 +132,6 @@ export default function Home() {
         >
           <i style={{ backgroundColor: 'transparent' }} class="fa-solid fa-download" ></i>Download CV
         </button>
-        <NextPage to={'/projects'} />
       </div>
       <div
         className={classNames(styles.second_content_home)}
@@ -147,6 +146,7 @@ export default function Home() {
           />
         </a>
       </div>
+      <NextPage to={'/projects'} />
     </motion.header>
   );
 }

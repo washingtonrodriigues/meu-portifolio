@@ -31,9 +31,8 @@ export default function Experience() {
     >
       <div>
         <h2 className={classNames(styles.h2_exp)}>Experiência</h2>
-        <div className={classNames(styles.div_exp)}>
-          {experiences.map((experience, index) => (
-
+        {experiences.map((experience, index) => (
+          <a href={experience.link} target='_blank' className={classNames(styles.div_exp)}>
             <div key={index}
               onMouseEnter={() => handleMouseEnter(index)}
               onMouseLeave={() => handleMouseLeave(index)} className={classNames(styles.exp_card)}>
@@ -46,8 +45,8 @@ export default function Experience() {
                 <p className={classNames(styles.exp_card_description)}>{experience.description}</p>
               </div>
             </div>
-          ))}
-        </div>
+          </a>
+        ))}
       </div>
       <div className={classNames(styles.div_skills)}>
         <h2 className={classNames(styles.h2_skills)}>Competências</h2>

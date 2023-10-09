@@ -2,17 +2,26 @@
 
 .next_page {
   text-decoration: none;
-  position: fixed;
-  bottom: 50px;
-  color: lightgray;
+  color: var(--color-white);
   font-size: 13px;
   font-family: var(--font-Poppins);
   transition: 0.3s;
+  text-align: right;
+  position: fixed;
+  bottom: 50px;
   right: 50px;
-  background-color: var(--color-black);
+  background-color: transparent;
 }
 
 .next_page:hover {
   color: var(--color-purple);
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .next_page {
+    position: absolute;
+    bottom: 50px;
+    right: 40%;
+  }
 }

@@ -177,6 +177,7 @@ a.next_page {
     display: flex;
     flex-direction: column-reverse;
     gap: 50px;
+    position: relative;
   }
 
   .name_title {
@@ -186,12 +187,14 @@ a.next_page {
 
   .title_title {
     margin: 0 auto;
+    text-align: center;
   }
 
   .p_bio {
     text-align: center;
     margin: 0 auto;
     width: 600px;
+    display: block;
   }
 
   .technologies {
@@ -215,13 +218,6 @@ a.next_page {
 
   .download_cv {
     margin: 0 auto 30px auto;
-  }
-
-  a.next_page {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    right: 0;
   }
 }
 
