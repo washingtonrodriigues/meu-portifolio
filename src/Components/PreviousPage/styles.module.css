@@ -1,6 +1,6 @@
 .previous_page {
   text-decoration: none;
-  position: fixed;
+  position: absolute;
   bottom: 50px;
   color: lightgray;
   font-size: 13px;
@@ -12,4 +12,23 @@
 .previous_page:hover {
   color: var(--color-purple);
   text-decoration: underline;
+}
+
+@media (max-width: 620px) {
+  .previous_page {
+    left: 38%;
+    bottom: 50px;
+  }
+}
+
+@media (max-width: 380px) {
+  .previous_page {
+    left: 36%;
+  }
+}
+
+@media (max-width: 320px) {
+  .previous_page {
+    left: 34%;
+  }
 }

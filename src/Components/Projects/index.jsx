@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import style from './styles.css';
+import styles from './styles.module.css';
 import PreviousPage from '../PreviousPage';
 import NextPage from '../NextPage';
 import projects from './data/projects.json'
 import { Carousel } from 'react-bootstrap';
+import classNames from 'classnames';
 
 export default function Projects({ project }) {
   const [filterType, setFilterType] = useState('uiux');
@@ -29,39 +30,40 @@ export default function Projects({ project }) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="container-projects">
+      className={classNames(styles.container_projects)}>
       <h2 data-aos="fade-right" data-aos-duration="1000">Projetos</h2>
-      <div className="content-projects">
-        <div className='select-project-type' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+      <div className={classNames(styles.content_projects)}>
+        <div className={classNames(styles.select_project_type)} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
           <h3 >Selecione o tipo de projeto:</h3>
           <select
             name=""
             id="filterTypeProject"
+            className={classNames(styles.filterTypeProject)}
             value={filterType}
             onChange={(ev) => setFilterType(ev.target.value)}>
             <option value="uiux">UI/UX</option>
             <option value="frontend">Front-end</option>
           </select>
         </div>
-        <div className='projects-slide carousel' data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+        <div className={`projects-slide ${classNames(styles.carousel)}`} data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
           {filterType === 'uiux' ? (
             <Carousel
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="projects-uiux inner">
+              className={classNames([styles.projects_uiux], [styles.inner])}>
               {projects
                 .filter((project) => project.type === 'UI/UX Design')
                 .map((project, index) => (
-                  <Carousel.Item className="project" key={index}>
-                    <img className="d-block w-50 img-carousel" src={project.image} alt={project.title} />
-                    <Carousel.Caption className='project-text' style={{ marginBottom: '30px' }}>
+                  <Carousel.Item className={classNames(styles.project)} key={index}>
+                    <img className={`d-block ${classNames(styles.img_carousel)}`} src={project.image} alt={project.title} />
+                    <Carousel.Caption className={classNames(styles.project_text)} style={{ marginBottom: '30px' }}>
                       <h3>{project.title}</h3>
-                      <p className='p-project'>{project.description}</p>
-                      <p className='p-project'>
+                      <p className={classNames([styles.p_project], [styles.p_description])}>{project.description}</p>
+                      <p className={classNames(styles.p_project)}>
                         Ferramentas:<span> {project.technologies.join(', ')}</span>
                       </p>
-                      <p className='p-project'>
+                      <p className={classNames(styles.p_project)}>
                         Visualizar: <a target='_blank' href={project.link}>Clique aqui</a>
                       </p>
                     </Carousel.Caption>
@@ -73,22 +75,22 @@ export default function Projects({ project }) {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="projects-frontend inner">
+              className={classNames([styles.projects_frontend], [styles.inner])}>
               {projects
                 .filter((project) => project.type === 'Front-end')
                 .map((project, index) => (
-                  <Carousel.Item className="project" key={index}>
-                    <img className="d-block w-50 img-carousel" src={project.image} alt={project.title} />
-                    <Carousel.Caption className='project-text'>
+                  <Carousel.Item className={classNames(styles.project)} key={index}>
+                    <img className={`d-block ${classNames(styles.img_carousel)}`} src={project.image} alt={project.title} />
+                    <Carousel.Caption className={classNames(styles.project_text)}>
                       <h3>{project.title}</h3>
-                      <p className='p-project'>{project.description}</p>
-                      <p className='p-project'>
+                      <p className={classNames([styles.p_project], [styles.p_description])}>{project.description}</p>
+                      <p className={classNames(styles.p_project)}>
                         Ferramentas:<span> {project.technologies.join(', ')}</span>
                       </p>
-                      <p className='p-project'>
+                      <p className={classNames(styles.p_project)}>
                         Visualizar: <a target='_blank' href={project.link}>Clique aqui</a>
                       </p>
-                      <p className='p-project'>
+                      <p className={classNames(styles.p_project)}>
                         Repositório: <a target='_blank' href={project.repository}>Clique aqui</a>
                       </p>
                     </Carousel.Caption>
@@ -98,8 +100,8 @@ export default function Projects({ project }) {
           )}
         </div>
       </div>
-      <PreviousPage className="prev-page" to={'/'} />
-      <NextPage className="next-page" to={'/experience'} />
+      <PreviousPage to={'/'} />
+      <NextPage to={'/experience'} />
     </motion.div>
   );
 }
