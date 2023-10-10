@@ -66,3 +66,54 @@ div {
   position: fixed;
   right: 50px;
 }
+
+/* MEDIA QUERY */
+@media (min-width: 1441px) {
+  .container_exp h2 {
+    font-size: 3rem;
+  }
+
+  .exp_card {
+    width: 100%;
+    max-width: 900px;
+  }
+
+  .exp_card > p {
+    font-size: 1.5rem;
+  }
+
+  .exp_card_header > h3 {
+    font-size: 2rem;
+  }
+
+  .exp_card_header > p {
+    font-size: 1.5rem;
+  }
+
+  .exp_card_description {
+    font-size: 1.2rem;
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container_exp {
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+
+  .div_skills {
+    position: relative;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 620px) {
+  .exp_card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}

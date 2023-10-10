@@ -14,10 +14,16 @@
   text-decoration: underline;
 }
 
+@media (max-width: 768px) {
+  .previous_page {
+    bottom: 20px;
+  }
+}
+
 @media (max-width: 620px) {
   .previous_page {
     left: 38%;
-    bottom: 50px;
+    bottom: 10px;
   }
 }
 

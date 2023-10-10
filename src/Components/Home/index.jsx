@@ -122,7 +122,7 @@ export default function Home() {
           </span>
         </div>
         <button
-          data-aos="fade-right"
+          data-aos={window.innerWidth > '425px' ? "fade-right" : ''}
           data-aos-delay="200"
           data-aos-duration="2000"
           onClick={downloadFile}

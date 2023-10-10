@@ -36,7 +36,8 @@ export default function Menu() {
       <ul
         style={{
           opacity: windowWidth <= 768 && !isMenuOpen ? '0' : '1',
-          zIndex: isMenuOpen ? '9999' : ''
+          zIndex: isMenuOpen ? '9999' : '',
+          backgroundColor: isMenuOpen ? '#0a0a0ae4' : ''
         }}
         className={classNames(styles.nav_list)}
       >

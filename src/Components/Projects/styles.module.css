@@ -134,6 +134,9 @@
 }
 
 @media (max-width: 1024px) {
+  .filterTypeProject > option {
+    font-size: 0.8rem;
+  }
   .project {
     height: 380px;
   }

@@ -301,6 +301,10 @@ a.next_page {
   .technologies {
     flex-wrap: wrap;
   }
+
+  .download_cv {
+    margin-bottom: 100px;
+  }
 }
 
 @media (max-width: 380px) {
@@ -323,5 +327,10 @@ a.next_page {
 
   .technologies span {
     width: 50px;
+  }
+
+  .download_cv {
+    width: 170px;
+    font-size: 0.8rem;
   }
 }

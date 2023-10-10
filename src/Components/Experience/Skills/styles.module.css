@@ -36,3 +36,10 @@
   font-size: 12px;
   color: gray;
 }
+
+/* MEDIA QUERY */
+@media (min-width: 1441px) {
+  .skills_p {
+    font-size: 1.4rem;
+  }
+}

@@ -84,7 +84,7 @@
     align-items: center;
     transition: 0.3s;
     position: absolute;
-    top: 32%;
+    top: 250px;
     left: 0;
     transform: translateY(-50%);
   }
@@ -108,7 +108,7 @@
   }
   .nav_list {
     position: absolute;
-    top: 20%;
+    top: 150px;
     left: 0;
     margin-top: 20%;
   }
@@ -116,6 +116,12 @@
 
 @media (max-width: 380px) {
   .nav_list {
-    top: 25%;
+    top: 160px;
+  }
+}
+
+@media (max-width: 320px) {
+  .nav_list {
+    top: 170px;
   }
 }
