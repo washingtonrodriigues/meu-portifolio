@@ -28,6 +28,7 @@ export default function Experience() {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       className={classNames(styles.container_exp)}
+      style={{ position: 'relative' }}
     >
       <div>
         <h2 className={classNames(styles.h2_exp)}>Experiência</h2>
@@ -52,8 +53,14 @@ export default function Experience() {
         <h2 className={classNames(styles.h2_skills)}>Competências</h2>
         <Skills />
       </div>
-      <PreviousPage to={"/projects"} />
-      <NextPage to={"/about"} />
+      <PreviousPage
+        className={classNames(styles.previous_page_exp)}
+        // style={{ left: '0', fontSize: '12px' }}
+        to={"/projects"} />
+      <NextPage
+        className={classNames(styles.next_page_exp)}
+        // style={{ right: '0', fontSize: '12px' }} 
+        to={"/about"} />
     </motion.div>
   );
 }

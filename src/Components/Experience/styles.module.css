@@ -108,6 +108,14 @@ div {
     margin: 0 auto;
     width: 100%;
   }
+
+  .next_page_exp {
+    right: 0;
+  }
+
+  .previous_page_exp {
+    left: 0;
+  }
 }
 
 @media (max-width: 620px) {
@@ -115,5 +123,34 @@ div {
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin-bottom: 100px;
+  }
+
+  .next_page_exp {
+    right: 36%;
+  }
+
+  .previous_page_exp {
+    left: 35%;
+  }
+}
+
+@media (max-width: 380px) {
+  .next_page_exp {
+    right: 33%;
+  }
+
+  .previous_page_exp {
+    left: 33%;
+  }
+}
+
+@media (max-width: 320px) {
+  .next_page_exp {
+    right: 29%;
+  }
+
+  .previous_page_exp {
+    left: 29%;
   }
 }

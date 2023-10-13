@@ -30,7 +30,8 @@ export default function Projects({ project }) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className={classNames(styles.container_projects)}>
+      className={classNames(styles.container_projects)}
+      style={{ position: 'relative' }}>
       <h2 data-aos="fade-right" data-aos-duration="1000">Projetos</h2>
       <div className={classNames(styles.content_projects)}>
         <div className={classNames(styles.select_project_type)} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
@@ -100,8 +101,8 @@ export default function Projects({ project }) {
           )}
         </div>
       </div>
-      <PreviousPage to={'/'} />
-      <NextPage to={'/experience'} />
+      <PreviousPage className={classNames(styles.previous_page_projects)} to={'/'} />
+      <NextPage className={classNames(styles.next_page_projects)} to={'/experience'} />
     </motion.div>
   );
 }

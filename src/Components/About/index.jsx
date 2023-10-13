@@ -12,6 +12,7 @@ export default function About() {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       className={classNames(styles.container_about)}
+      style={{ position: 'relative' }}
     >
       <h2>Sobre mim</h2>
       <div className={classNames(styles.content_about)}>
@@ -24,8 +25,8 @@ export default function About() {
         </div>
         <img src="../../public/couple.jpg" alt="" className={classNames(styles.img_about)} />
       </div>
-      <PreviousPage to={'/experience'} />
-      <NextPage to={'/contact'} />
+      <PreviousPage className={classNames(styles.previous_page_about)} to={'/experience'} />
+      <NextPage className={classNames(styles.next_page_about)} to={'/contact'} />
     </motion.div>
   );
 }
