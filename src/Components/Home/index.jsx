@@ -44,7 +44,7 @@ export default function Home() {
           >
             <img
               className={classNames(styles.tech_icons)}
-              src="../.././public/icons/react.svg"
+              src=".././public/icons/react.svg"
               alt=""
             />
             <p className={classNames(styles.tech_name)}>ReactJS</p>
@@ -142,7 +142,7 @@ export default function Home() {
         <a href="/about">
           <img
             className={classNames(styles.photo)}
-            src="../../public/profile2.jpg"
+            src="src\assets\profile2.jpg"
             alt="Foto Washington Rodrigues"
           />
         </a>

@@ -29,7 +29,7 @@ export default function Menu() {
       <a href="/" className={classNames(styles.a_logo)}>
         <img
           className={classNames(styles.logo)}
-          src="../.././public/logo-wr2.png"
+          src="src\assets\logo-wr2.png"
           alt="Logo Washington Rodrigues"
         />
       </a>
