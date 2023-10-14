@@ -329,7 +329,7 @@
   }
 }
 
-@media (max-width: 268px) {
+@media (max-width: 380px) {
   .content_contact h3 {
     font-size: 1.2rem;
   }
@@ -340,8 +340,6 @@
 
   .input {
     font-size: 0.8rem;
-    width: 100%;
-    max-width: 300px;
   }
 }
 
