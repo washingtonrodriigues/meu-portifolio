@@ -20,6 +20,7 @@ export default function Home() {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       className={classNames(styles.home)}
+      style={{ position: 'relative' }}
     >
       <div className={classNames(styles.first_content_home)}>
         <div className={classNames(styles.title)}>
@@ -146,7 +147,7 @@ export default function Home() {
           />
         </a>
       </div>
-      <NextPage to={'/projects'} />
+      <NextPage className={classNames(styles.next_page_home)} to={'/projects'} />
     </motion.header>
   );
 }

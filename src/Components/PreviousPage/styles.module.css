@@ -1,17 +1,26 @@
 .previous_page {
   text-decoration: none;
   position: absolute;
-  bottom: 50px;
+  bottom: -80px;
   color: lightgray;
   font-size: 13px;
   font-family: var(--font-Poppins);
   transition: 0.3s;
   left: 50px;
+  background-color: transparent;
 }
 
 .previous_page:hover {
   color: var(--color-purple);
   text-decoration: underline;
+}
+
+/* MEDIA QUERY */
+
+@media (min-width: 1920px) {
+  .previous_page {
+    font-size: 1.5rem;
+  }
 }
 
 @media (max-width: 768px) {

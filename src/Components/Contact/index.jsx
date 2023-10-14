@@ -69,6 +69,7 @@ export default function Contact() {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       className={classNames(styles.container_contact)}
+      style={{ position: 'relative' }}
     >
       <h2>Contato</h2>
       <div className={classNames(styles.content_contact)}>
@@ -102,8 +103,8 @@ export default function Contact() {
           <div className={classNames(styles.email)}>
             <h3>E-mail</h3>
             <div>
-              <i className="fa-regular fa-envelope"></i>
-              <a href="mailto:washington_sr_@hotmail.com">
+              <i className={`fa-regular fa-envelope ${classNames(styles.fa_icon)}`}></i>
+              <a className={classNames(styles.link_contact)} href="mailto:washington_sr_@hotmail.com">
                 washington_sr_@hotmail.com
               </a>
             </div>
@@ -111,14 +112,15 @@ export default function Contact() {
           <div className={classNames(styles.phone)}>
             <h3>Telefone</h3>
             <div>
-              <i className="fa-brands fa-whatsapp"></i>
-              <a target="_blank" href="https://wa.me/5579999216703">
+              <i className={`fa-brands fa-whatsapp ${classNames(styles.fa_icon)}`}></i>
+              <a className={classNames(styles.link_contact)} target="_blank" href="https://wa.me/5579999216703">
                 +55 79 9 9921-6703
               </a>
             </div>
           </div>
         </div>
         <form className={classNames(styles.second_content_contact)} onSubmit={sendEmail}>
+          <p className={classNames(styles.form_title)}><span></span>Entrar em contato</p>
           <div className={classNames(styles.input)}>
             <label htmlFor="">Nome</label>
             <input
@@ -172,7 +174,7 @@ export default function Contact() {
           <input className={classNames(styles.send_btn)} type="submit" value="Enviar" />
         </form>
       </div>
-      <PreviousPage to={'/about'} />
+      <PreviousPage className={classNames(styles.previous_page_contact)} to={'/about'} />
     </motion.div>
   );
 }

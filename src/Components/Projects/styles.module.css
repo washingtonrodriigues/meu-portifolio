@@ -89,8 +89,13 @@
   background-color: transparent;
 }
 
+/* .next_page_projects,
+.previous_page_projects {
+  bottom: -80px;
+} */
+
 /* MEDIA QUERY */
-@media (min-width: 1441px) {
+@media (min-width: 1920px) {
   .container_projects {
     margin-top: 150px;
   }
@@ -155,6 +160,11 @@
   .p_project {
     font-size: 14px;
   }
+
+  .next_page_projects,
+  .previous_page_projects {
+    bottom: -40px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -169,11 +179,6 @@
 
   .project_text > h3 {
     font-size: 1rem;
-  }
-
-  .next_page_projects,
-  .previous_page_projects {
-    bottom: 0;
   }
 }
 

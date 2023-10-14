@@ -41,11 +41,12 @@
 
 .previous_page_about,
 .next_page_about {
-  bottom: -60px;
+  bottom: -50px;
+  padding-bottom: 20px;
 }
 
 /* MEDIA QUERY */
-@media (min-width: 1441px) {
+@media (min-width: 1920px) {
   .container_about > h2 {
     font-size: 3.5rem;
   }
@@ -58,6 +59,7 @@
   .next_page_about,
   .previous_page_about {
     font-size: 1.5rem;
+    bottom: -100px;
   }
 }
 

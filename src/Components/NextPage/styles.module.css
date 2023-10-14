@@ -8,7 +8,7 @@
   transition: 0.3s;
   text-align: right;
   position: absolute;
-  bottom: 50px;
+  bottom: -80px;
   right: 50px;
   background-color: transparent;
 }
@@ -19,9 +19,9 @@
 }
 
 /* MEDIA QUERY */
-@media (min-width: 1441px) {
+@media (min-width: 1920px) {
   .next_page {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 }
 

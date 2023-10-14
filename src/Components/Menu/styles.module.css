@@ -52,7 +52,7 @@
 
 /* MEDIA QUERY */
 
-@media (min-width: 1441px) {
+@media (min-width: 1920px) {
   .navbar {
     height: 200px;
     padding: 0 100px;

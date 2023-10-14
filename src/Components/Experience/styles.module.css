@@ -68,7 +68,7 @@ div {
 }
 
 /* MEDIA QUERY */
-@media (min-width: 1441px) {
+@media (min-width: 1920px) {
   .container_exp h2 {
     font-size: 3rem;
   }
@@ -146,6 +146,12 @@ div {
 }
 
 @media (max-width: 320px) {
+  .exp_card {
+    width: 100%;
+    max-width: 300px;
+    padding-left: 0;
+    padding-right: 0;
+  }
   .next_page_exp {
     right: 29%;
   }

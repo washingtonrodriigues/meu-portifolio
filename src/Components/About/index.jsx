@@ -14,7 +14,7 @@ export default function About() {
       className={classNames(styles.container_about)}
       style={{ position: 'relative' }}
     >
-      <h2>Sobre mim</h2>
+      <h2>Sobre</h2>
       <div className={classNames(styles.content_about)}>
         <div className={classNames(styles.text)}>
           <p>Olá! Meu nome é Washington Rodrigues, cursando Análise  e Desenvolvimento de Sistemas, sou um empreendedor de 26 anos natural de Aracaju, Sergipe, e noivo de Larissa Pinheiro. Minha jornada no mundo da tecnologia começou há apenas 10 meses, mas desde então, venho trilhando um caminho empolgante no desenvolvimento web.</p>
