@@ -44,7 +44,7 @@ export default function Home() {
           >
             <img
               className={classNames(styles.tech_icons)}
-              src=".././public/icons/react.svg"
+              src="/react.svg"
               alt=""
             />
             <p className={classNames(styles.tech_name)}>ReactJS</p>
@@ -56,7 +56,7 @@ export default function Home() {
           >
             <img
               className={classNames(styles.tech_icons)}
-              src="../.././public/icons/javascript.svg"
+              src="/javascript.svg"
               alt=""
             />
             <p className={classNames(styles.tech_name)}>JavaScript</p>
@@ -68,7 +68,7 @@ export default function Home() {
           >
             <img
               className={classNames(styles.tech_icons)}
-              src="../.././public/icons/typescript.svg"
+              src="/typescript.svg"
               alt=""
             />
             <p className={classNames(styles.tech_name)}>TypeScript</p>
@@ -80,7 +80,7 @@ export default function Home() {
           >
             <img
               className={classNames(styles.tech_icons)}
-              src="../.././public/icons/html.svg"
+              src="/html.svg"
               alt=""
             />
             <p className={classNames(styles.tech_name)}>HTML5</p>
@@ -92,7 +92,7 @@ export default function Home() {
           >
             <img
               className={classNames(styles.tech_icons)}
-              src="../.././public/icons/css.svg"
+              src="/css.svg"
               alt=""
             />
             <p className={classNames(styles.tech_name)}>CSS3</p>
@@ -104,7 +104,7 @@ export default function Home() {
           >
             <img
               className={classNames(styles.tech_icons)}
-              src="../.././public/icons/git.svg"
+              src="/git.svg"
               alt=""
             />
             <p className={classNames(styles.tech_name)}>Git</p>
@@ -116,7 +116,7 @@ export default function Home() {
           >
             <img
               className={classNames(styles.tech_icons)}
-              src="../.././public/icons/figma.svg"
+              src="/figma.svg"
               alt=""
             />
             <p className={classNames(styles.tech_name)}>Figma</p>
@@ -142,7 +142,7 @@ export default function Home() {
         <a href="/about">
           <img
             className={classNames(styles.photo)}
-            src="src\assets\profile2.jpg"
+            src="/profile2.jpg"
             alt="Foto Washington Rodrigues"
           />
         </a>

@@ -23,7 +23,7 @@ export default function About() {
           <p>Estou empolgado para continuar minha jornada no mundo da tecnologia, desenvolver minhas habilidades e criar soluções inovadoras. Se você está interessado em trabalhar comigo ou apenas deseja bater um papo sobre tecnologia, não hesite em entrar em contato.</p>
           <p>Vamos construir um futuro incrível juntos! <a href="/contact">Entrar em contato</a></p>
         </div>
-        <img src="src\assets\couple.jpg" alt="" className={classNames(styles.img_about)} />
+        <img src="/couple.jpg" alt="" className={classNames(styles.img_about)} />
       </div>
       <PreviousPage className={classNames(styles.previous_page_about)} to={'/experience'} />
       <NextPage className={classNames(styles.next_page_about)} to={'/contact'} />
