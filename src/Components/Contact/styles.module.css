@@ -340,6 +340,8 @@
 
   .input {
     font-size: 0.8rem;
+    width: 100%;
+    max-width: 300px;
   }
 }
 
