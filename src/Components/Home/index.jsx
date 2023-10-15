@@ -11,7 +11,7 @@ export default function Home() {
   };
   function downloadFile() {
     const googleDriveFileLink =
-      'https://drive.google.com/u/1/uc?id=1kDiypi-ylLw8nulctNdtktFzsUr8wE0l&export=download';
+      'https://drive.google.com/u/1/uc?id=1XvpuvxuKZDL2K78yd6F1iG3B8ednkLo6&export=download';
     window.open(googleDriveFileLink);
   }
   return (
