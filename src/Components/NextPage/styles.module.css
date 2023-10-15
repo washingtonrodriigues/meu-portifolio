@@ -41,12 +41,12 @@
 
 @media (max-width: 380px) {
   .next_page {
-    right: 37%;
+    right: 36%;
   }
 }
 
 @media (max-width: 320px) {
   .next_page {
-    right: 35%;
+    right: 34%;
   }
 }
