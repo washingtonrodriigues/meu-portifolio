@@ -311,7 +311,7 @@
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 620px) {
   .container_contact > h2 {
     font-size: 1.5rem;
   }
