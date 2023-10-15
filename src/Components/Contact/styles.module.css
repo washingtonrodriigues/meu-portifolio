@@ -320,6 +320,13 @@
     font-size: 1.4rem;
   }
 
+  .social_medias,
+  .email,
+  .phone {
+    width: 100%;
+    max-width: 300px;
+  }
+
   .social_medias_icons {
     font-size: 1.2rem;
   }
@@ -343,7 +350,7 @@
   }
 }
 
-@media (220px <= width < 380px) {
+@media (max-width: 320px) {
   .social_medias,
   .email,
   .phone {
