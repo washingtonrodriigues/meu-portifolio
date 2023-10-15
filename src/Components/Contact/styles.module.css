@@ -334,6 +334,10 @@
   .link_contact {
     font-size: 1rem;
   }
+
+  .input {
+    max-width: 300px;
+  }
 }
 
 @media (max-width: 380px) {
