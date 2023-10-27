@@ -169,12 +169,13 @@
 
 @media (max-width: 768px) {
   .project {
-    height: 400px;
+    height: 500px;
   }
 
   .img_carousel {
-    width: 55%;
+    width: 100%;
     max-width: 400px;
+    margin-top: 10%;
   }
 
   .project_text > h3 {
@@ -183,6 +184,9 @@
 }
 
 @media (max-width: 425px) {
+  .container_projects {
+    margin-top: 0;
+  }
   .img_carousel {
     width: 100%;
     max-width: 340px;
@@ -201,6 +205,12 @@
 
   .p_project {
     font-size: 12px;
+  }
+
+  .p_project > span {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 100px;
   }
 
   .p_description {

@@ -8,7 +8,7 @@ import { Carousel } from 'react-bootstrap';
 import classNames from 'classnames';
 
 export default function Projects({ project }) {
-  const [filterType, setFilterType] = useState('uiux');
+  const [filterType, setFilterType] = useState('fullstack');
   // const [width, setWidth] = useState(0)
   // const [click, setClick] = useState(false)
   // const carousel = useRef()
@@ -44,6 +44,7 @@ export default function Projects({ project }) {
             onChange={(ev) => setFilterType(ev.target.value)}>
             <option value="uiux">UI/UX</option>
             <option value="frontend">Front-end</option>
+            <option value="fullstack">Full Stack</option>
           </select>
         </div>
         <div className={`projects-slide ${classNames(styles.carousel)}`} data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
@@ -71,7 +72,7 @@ export default function Projects({ project }) {
                   </Carousel.Item>
                 ))}
             </Carousel>
-          ) : (
+          ) : filterType === 'frontend' ? (
             <Carousel
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -90,6 +91,34 @@ export default function Projects({ project }) {
                       </p>
                       <p className={classNames(styles.p_project)}>
                         Visualizar: <a target='_blank' href={project.link}>Clique aqui</a>
+                      </p>
+                      <p className={classNames(styles.p_project)}>
+                        Repositório: <a target='_blank' href={project.repository}>Clique aqui</a>
+                      </p>
+                    </Carousel.Caption>
+                  </Carousel.Item>
+                ))}
+            </Carousel>
+          ) : (
+            <Carousel
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className={classNames([styles.projects_frontend], [styles.inner])}>
+              {projects
+                .filter((project) => project.type === 'Full Stack')
+                .map((project, index) => (
+                  <Carousel.Item className={classNames(styles.project)} key={index}>
+                    <img className={`d-block ${classNames([styles.img_carousel, [styles.img_fullstack]])}`} src={project.image} alt={project.title} />
+                    <Carousel.Caption className={classNames(styles.project_text)}>
+                      <h3>{project.title}</h3>
+                      <p className={classNames([styles.p_project], [styles.p_description])}>{project.description}</p>
+                      <p className={classNames(styles.p_project)}>
+                        Ferramentas:<span> {project.technologies.join(', ')}</span>
+                      </p>
+                      <p className={classNames(styles.p_project)}>
+                        Vizualizar: Em breve!
+                        {/* Visualizar: <a target='_blank' href={project.link}>Clique aqui</a> */}
                       </p>
                       <p className={classNames(styles.p_project)}>
                         Repositório: <a target='_blank' href={project.repository}>Clique aqui</a>

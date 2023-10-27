@@ -31,8 +31,26 @@
     "type": "Front-end",
     "description": "Esse projeto consiste em um sistema que gerencia todo o funcionamento das placas de automação fornecidas pela empresa Redtech, onde sou voluntário. O Front-end do mesmo está sendo construído com ReactJS e há várias integrações com o back-end para que os dados sejam manipulados na tela de forma dinâmica. O projeto ainda não está pronto, porém, no link abaixo você poderá ver imagens de algumas telas que já construí.",
     "image": "/redgtechproject2.png",
-    "technologies": ["ReactJS", "CSS3", "JavaScript", "Bootstrap"],
+    "technologies": ["React.JS", "CSS3", "JavaScript", "Bootstrap"],
     "link": "https://drive.google.com/drive/folders/1Wwi5d_kxZ2gI18_WeO8N9MWQyXnw5yBa?usp=sharing",
     "repository": "https://github.com/seven-lan/front-end"
+  },
+  {
+    "title": "Projeto FSW Store",
+    "type": "Full Stack",
+    "description": "Este projeto de e-commerce segue o princípio do Mobile First e atualmente oferece recursos como login com autenticação do Google via NextAuth, visualização e adição de produtos ao carrinho, e finalização de compras com integração ao Stripe. Embora ainda esteja incompleto, a versão desktop está planejada para implementação futura. Novas funcionalidades estão sendo desenvolvidas, e o deploy será disponibilizado em breve.",
+    "image": "/fswstoreproject.png",
+    "technologies": [
+      "Next.JS",
+      "React.JS",
+      "Typescript",
+      "Node.JS",
+      "TailwindCss",
+      "Prisma",
+      "Postgres",
+      "Shadcn"
+    ],
+    "link": "Disponível em breve!",
+    "repository": "https://github.com/washingtonrodriigues/e-commerce"
   }
 ]
