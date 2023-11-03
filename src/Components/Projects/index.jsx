@@ -117,8 +117,7 @@ export default function Projects({ project }) {
                         Ferramentas:<span> {project.technologies.join(', ')}</span>
                       </p>
                       <p className={classNames(styles.p_project)}>
-                        Vizualizar: Em breve!
-                        {/* Visualizar: <a target='_blank' href={project.link}>Clique aqui</a> */}
+                        Visualizar: <a target='_blank' href={project.link}>Clique aqui</a>
                       </p>
                       <p className={classNames(styles.p_project)}>
                         Repositório: <a target='_blank' href={project.repository}>Clique aqui</a>
