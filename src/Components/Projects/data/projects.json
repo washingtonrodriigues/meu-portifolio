@@ -38,7 +38,7 @@
   {
     "title": "Projeto FSW Store",
     "type": "Full Stack",
-    "description": "Este projeto de e-commerce segue o princípio do Mobile First e atualmente oferece recursos como login com autenticação do Google via NextAuth, visualização e adição de produtos ao carrinho, e finalização de compras com integração ao Stripe. Embora ainda esteja incompleto, a versão desktop está planejada para implementação futura. Novas funcionalidades estão sendo desenvolvidas, e o deploy será disponibilizado em breve.",
+    "description": "Este projeto de e-commerce segue o princípio do Mobile First e atualmente oferece recursos como login com autenticação do Google via NextAuth, visualização e adição de produtos ao carrinho, finalização de compras com integração ao Stripe, barra de pesquisa de produtos. Embora ainda esteja incompleto, a versão desktop está planejada para implementação futura, juntamente com novas funcionalidades.",
     "image": "/fswstoreproject.png",
     "technologies": [
       "Next.JS",
